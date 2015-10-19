@@ -68,6 +68,8 @@ int main() {
 				std::cin.ignore();
 				std::cout << "Digite o nome da pessoa:" << std::endl;
 				std::getline(std::cin, nome);
+				std::cout << "Digite o endereço da pessoa:" << std::endl;
+                                std::getline(std::cin, endereco);
 				std::cout << "Digite o CPF da pessoa:" << std::endl;
 				std::cin >> cpf;
 				std::string tmp;

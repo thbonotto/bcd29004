@@ -8,7 +8,7 @@
 #include "SimpleDB.h"
 #include <iostream>
 #include <fstream>
-#include <jsoncpp/json/reader.h>
+//#include <jsoncpp/json/reader.h>
 namespace bcd {
 
 SimpleDB::SimpleDB() {
@@ -20,7 +20,7 @@ SimpleDB::SimpleDB(const std::string& filePath){
 	std::ifstream myfile;
 	std::string buffer, buffer2;
 	myfile.open(filePath);
-	Json::Value root;   // will contains the root value after parsing.
+/*	Json::Value root;   // will contains the root value after parsing.
 	Json::Reader reader;
 
 	reader.parse(myfile,root);
@@ -34,7 +34,7 @@ SimpleDB::SimpleDB(const std::string& filePath){
 	std::string nome, endereco;
 
 
-
+*/
 
 }
 

@@ -27,7 +27,7 @@ std::string Person::getJSONEncoded() const {
 	retorno="{ \"Pessoa\": {";
 	//retorno+="\t \"CPFouPassorte\": \"" + std::to_string(this->mCPForPassport) + "\",\n";
 	//retorno+="\t \"Endereco\":\"" + this->mCompleteAdress + "\",\n";
-	retorno+="\"CPFouPassorte\": \"" + std::to_string(this->mCPForPassport) + "\",";
+	retorno+="\"CPFouPassaporte\": \"" + std::to_string(this->mCPForPassport) + "\",";
 	retorno+="\"Endereco\":\"" + this->mCompleteAdress + "\",";
 	retorno+="\"Telefones\": [";
 	for(const auto& telefone : this->mPhones){
@@ -43,7 +43,7 @@ std::string Person::getJSONEncoded() const {
 std::string Person::getXMLEncoded() const {
 	std::string retorno;
 	retorno="<Pessoa> \n";
-	retorno+="\t <CPFouPassorte>" + std::to_string(this->mCPForPassport) + "</CPFouPassorte>\n";
+	retorno+="\t <CPFouPassaporte>" + std::to_string(this->mCPForPassport) + "</CPFouPassaporte>\n";
 	retorno+="\t <Endereco>" + this->mCompleteAdress + "</Endereco>\n";
 	retorno+="\t <Telefones>\n";
 	for(const auto& telefone : this->mPhones)
