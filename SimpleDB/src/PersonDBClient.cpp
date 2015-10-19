@@ -32,6 +32,7 @@ void menuPessoa(SimpleDB& db, Person& pessoa) {
 			break;
 		case 3:
 			db.removePerson(pessoa);
+			return;
 			break;
 		default:
 			return;
