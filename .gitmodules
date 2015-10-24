@@ -1,0 +1,3 @@
+[submodule "SimpleDB"]
+	path = SimpleDB
+	url = https://github.com/thbonotto/SimpleDB
